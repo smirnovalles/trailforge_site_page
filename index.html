@@ -1,0 +1,70 @@
+import React from "react";
+
+export default function TrailForgeSite() {
+  return (
+    <main className="min-h-screen bg-gray-950 text-white font-[Montserrat]">
+      {/* Google Fonts Link */}
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+      {/* Header */}
+      <header className="flex items-center justify-between px-8 py-6 border-b border-gray-800">
+        <div className="flex items-center gap-4">
+          <img src="/mnt/data/ChatGPT Image 24 мая 2025 г., 12_55_27.png" alt="TrailForge Logo" className="h-10 w-auto" />
+          <h1 className="text-2xl font-bold tracking-wider">TRAILFORGE</h1>
+        </div>
+        <nav className="space-x-6 text-sm">
+          <a href="#about" className="hover:underline">О компании</a>
+          <a href="#products" className="hover:underline">Продукция</a>
+          <a href="#contact" className="hover:underline">Контакты</a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="flex flex-col items-center justify-center text-center px-6 py-20 bg-gray-900">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">НАДЁЖНЫЕ ПРИЦЕПЫ ДЛЯ ТЯЖЁЛОЙ РАБОТЫ</h2>
+        <p className="text-gray-400 max-w-xl text-lg">TRAILFORGE создаёт прицепы, которым вы можете доверять — будь то для бизнеса, строительства или приключений.</p>
+      </section>
+
+      {/* Products */}
+      <section id="products" className="px-6 py-20">
+        <h3 className="text-3xl font-bold mb-10 text-center">Наша продукция</h3>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-gray-800 p-6 rounded-2xl shadow">
+            <h4 className="text-xl font-semibold mb-2">Грузовые прицепы</h4>
+            <p className="text-gray-400">Усиленная конструкция для профессионального использования и перевозки тяжёлых грузов.</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-2xl shadow">
+            <h4 className="text-xl font-semibold mb-2">Прицепы для техники</h4>
+            <p className="text-gray-400">Идеальны для перевозки строительной и сельскохозяйственной техники.</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-2xl shadow">
+            <h4 className="text-xl font-semibold mb-2">Универсальные модели</h4>
+            <p className="text-gray-400">Гибкие решения для разных задач: от дачи до стройки.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="px-6 py-20 bg-gray-900">
+        <h3 className="text-3xl font-bold mb-6 text-center">О компании</h3>
+        <p className="text-gray-400 max-w-3xl mx-auto text-center">TRAILFORGE — это команда инженеров и производственников, создающих прочные и функциональные прицепы. Мы знаем, насколько важно оборудование, которое не подведёт в самый ответственный момент.</p>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="px-6 py-20">
+        <h3 className="text-3xl font-bold mb-6 text-center">Связаться с нами</h3>
+        <form className="max-w-xl mx-auto grid gap-6">
+          <input type="text" placeholder="Ваше имя" className="p-3 rounded bg-gray-800 text-white" />
+          <input type="email" placeholder="Email" className="p-3 rounded bg-gray-800 text-white" />
+          <textarea placeholder="Сообщение" rows="4" className="p-3 rounded bg-gray-800 text-white"></textarea>
+          <button type="submit" className="bg-white text-black px-6 py-3 rounded hover:bg-gray-200">Отправить</button>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer className="px-6 py-8 text-center text-gray-500 text-sm border-t border-gray-800">
+        © 2025 TRAILFORGE. Все права защищены.
+      </footer>
+    </main>
+  );
+}
